@@ -1,4 +1,5 @@
-# urlshortner
+# Urlshortner Tool:
+
 Given an URL, this application will return a tiny url
 
 This application makes use of MySql database. Username is root and password is 1.
@@ -10,6 +11,7 @@ You can follow this url for the steps - https://www.digitalocean.com/community/t
 
 
 Enter the following query in the mysql-client -
+
 CREATE DATABASE urlshorten;
 
 USE urlshorten;
