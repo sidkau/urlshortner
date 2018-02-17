@@ -10,8 +10,10 @@ You can follow this url for the steps - https://www.digitalocean.com/community/t
 
 
 Enter the following query in the mysql-client -
-CREATE DATABASE urlshorten
-USE urlshorten
+CREATE DATABASE urlshorten;
+
+USE urlshorten;
+
 CREATE TABLE urlshortner (id VARCHAR(10), shortUrl VARCHAR(50), longUrl VARCHAR(1024), burn_notice varchar(10));
 
 
