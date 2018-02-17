@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>URL Shortener</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="inner-container">
+          <h1>URL Shortner</h1>
+              <div class="input-group input-group-lg">
+                <input id="url-field" type="text" class="form-control" placeholder="Paste a link...">
+                <div class="input-group-btn">
+                  <button class="btn btn-shorten" type="button">SHORTEN</button>
+                </div>
+                <div class="burn-notice-container">
+                <input id="burn-notice" name="burn-notice" type="checkbox">
+                <span>Burn Notice!</span>
+              </div>
+              </div>
+              <div id="link"></div>
+
+        </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="javascripts/shorten.js"></script>
+</body>
+</html>
