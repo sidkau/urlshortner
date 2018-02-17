@@ -25,3 +25,7 @@ Once done, type node app.js and you are set.
 
 In your browser type http://localhost:3000.
 
+End points for-
+Creation of shortlink- /create (POST request)
+Deletion of shortlink - /<shortlink>/del (GET call)
+
