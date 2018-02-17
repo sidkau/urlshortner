@@ -2,12 +2,16 @@
 Given an URL, this application will return a tiny url
 
 This application makes use of MySql database. Username is root and password is 1.
-In db.js file, you can add your username and password for mysql.
+
+In db.js file, you can modify your username and password for MySQL if it's different.
 
 If you don't have mysql,please install mysql. 
 You can follow this url for the steps - https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04
 
+
 Enter the following query in the mysql-client -
+CREATE DATABASE urlshorten
+USE urlshorten
 CREATE TABLE urlshortner (id VARCHAR(10), shortUrl VARCHAR(50), longUrl VARCHAR(1024), burn_notice varchar(10));
 
 
