@@ -72,13 +72,23 @@ app.get("/:id", function(req, res) {
                 });
             }
         } else {
-            res.send('URL BURNT!!!!!')
+            res.send('URL Deleted!!!!!');
         }
       
 			
         }); 
         
 });
+app.get('/:id/del',function(req,res) {
+    if(!req.params.id) {
+        return res.status(400).send({"status": "error", "message": "An id is required"});
+    }
+    console.log(req.params.id);
+    knex('urlshortner').where('id',req.params.id).del().then(function(result){
+        
+        res.send('URL Deleted!!!!');
+    });
+})
 var server = app.listen(3000, function() {
     console.log("Listening on port %s...", server.address().port);
 });
